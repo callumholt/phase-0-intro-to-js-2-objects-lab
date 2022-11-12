@@ -27,3 +27,16 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, name, value) {
 
     return employee;
 }
+
+function deleteFromEmployeeByKey(employee, key) {
+    const newEmployee = { ...employee };
+    delete newEmployee.name;
+
+    return newEmployee;
+
+}
+
+function destructivelyDeleteFromEmployeeByKey(employee, key) {
+    delete employee.name;
+    return employee;
+}
